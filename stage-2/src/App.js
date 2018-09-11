@@ -48,6 +48,7 @@ class App extends Component {
           <Route path="/shoppingcart" render={() => {
             return <ShoppingCart
               shoppingCart={this.state.shoppingCart}
+              addToShoppingCart = {this.state.addToShoppingCart}
               removeFromShoppingCart={this.removeFromShoppingCart} />
           }} />
         </Switch>
